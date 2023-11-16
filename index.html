@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./apps/frontend/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,41 +18,49 @@
     </div>
     <div class="content">
 
-        <p id="descriptionText"></p>
-        <p id="sentence"></p>
+        <p id="descriptionText">This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.
+        </p>
+        <p id="sentence">You <i>know</i> you want to.</p>
+
         <form action="" method="post" class="form">
 
-            <legend>Let's Do This</legend>
-
-            <div class="row1">
-                <div class="col1">
-                    <label for=""></label>
-                    <input type="text" name="" id="">
+            <div class="sign_upInfo">
+                <legend>Let's Do This</legend>
+                <div class="row1">
+                    <div class="col">
+                        <label for="firstN">FIRST NAME</label>
+                        <input type="text" name="firstName" id="firstN" required>
+                    </div>
+                    <div class="col">
+                        <label for="lastN">LAST NAME</label>
+                        <input type="text" name="lastName" id="lastN" required>
+                    </div>
                 </div>
-                <div class="col2">
-                    <label for=""></label>
-                    <input type="text" name="" id="">
+                <div class="row2">
+                    <div class="col">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="emailAdress" id="email" required>
+                    </div>
+                    <div class="col">
+                        <label for="telNum">PHONE NUMBER</label>
+                        <input type="tel" name="PhoneNumber" minlength="10" maxlength="12" id="telNum" required>
+                    </div>
+                </div>
+                <div class="row3">
+                    <div class="col">
+                        <label for="passW">PASSWORD</label>
+                        <input type="password" name="password" minlength="8"  id="passW" required>
+                    </div>
+                    <div class="col">
+                        <label for="confpass">CONFIRM PASSWORD</label>
+                        <input type="password" name="passConformation" minlength="8" id="confpass" required>
+                    </div>
                 </div>
             </div>
-            <div class="row2">
-                <div class="col1">
-                    <label for=""></label>
-                    <input type="email" name="" id="">
-                </div>
-                <div class="col2">
-                    <label for=""></label>
-                    <input type="tel" name="" id="">
-                </div>
-            </div>
-            <div class="row3">
-                <div class="col1">
-                    <label for=""></label>
-                    <input type="password" name="" id="">
-                </div>
-                <div class="col2">
-                    <label for=""></label>
-                    <input type="password" name="" id="">
-                </div>
+            <div class="outside-Row">
+                <button type="submit">Create Account</button>
+                <p id="logIn">already have an account? <span>Log in</span></p>
             </div>
 
         </form>
